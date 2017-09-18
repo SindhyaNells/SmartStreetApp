@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         Intent about_intent=new Intent(MainActivity.this,AboutActivity.class);
                         startActivity(about_intent);
+                        break;
+                    case 4:
+                        Intent map_intent=new Intent(MainActivity.this,MapsActivity.class);
+                        startActivity(map_intent);
+                        break;
+
                 }
 
             }

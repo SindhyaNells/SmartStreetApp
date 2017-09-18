@@ -11,4 +11,13 @@
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
 
+    <!-- Map Activity -->
+    <string name="map_title">Location</string>
+    <string name="location_dialog_msg">Please enable your location</string>
+    <string name="location_dialog_ok">OK</string>
+    <string name="location_dialog_cancel">Cancel</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCJfIQuB0MaKH3J2HU7-yVqLIgT0vrK_x4
+    </string>
+
 </resources>
