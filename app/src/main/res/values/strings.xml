@@ -20,4 +20,15 @@
         AIzaSyCJfIQuB0MaKH3J2HU7-yVqLIgT0vrK_x4
     </string>
 
+    <!-- Feedback Activity -->
+    <string name="user_comment">Comment</string>
+    <string name="user_rating">Rating</string>
+    <string name="submit_feedback">Submit</string>
+    <string name="feedback_success_msg">Your feedback is sent!</string>
+    <string name="feedback_failure_msg">Error. Please Try again.</string>
+    <string name="feedback_title">Feedback</string>
+
+    <!--Dialog-->
+    <string name="dialog_ok">ok</string>
+
 </resources>

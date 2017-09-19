@@ -9,6 +9,8 @@
     <dimen name="tv_header_size">20sp</dimen>
     <dimen name="tv_body_content">16sp</dimen>
     <dimen name="tv_font_size">20sp</dimen>
+
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tv_left_margin">2dp</dimen>
 
 </resources>

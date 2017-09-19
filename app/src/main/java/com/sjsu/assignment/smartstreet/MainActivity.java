@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent map_intent=new Intent(MainActivity.this,MapsActivity.class);
                         startActivity(map_intent);
                         break;
+                    case 5:
+                        Intent feedback_intent=new Intent(MainActivity.this,FeedbackActivity.class);
+                        startActivity(feedback_intent);
+                        break;
 
                 }
 
