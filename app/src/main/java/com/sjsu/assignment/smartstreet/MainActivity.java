@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent about_intent=new Intent(MainActivity.this,AboutActivity.class);
                         startActivity(about_intent);
                         break;
+                    case 2:
+                        Intent photo_intent=new Intent(MainActivity.this,PhotoActivity.class);
+                        startActivity(photo_intent);
+                        break;
                     case 4:
                         Intent map_intent=new Intent(MainActivity.this,MapsActivity.class);
                         startActivity(map_intent);

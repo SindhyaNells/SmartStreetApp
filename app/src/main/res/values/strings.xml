@@ -20,6 +20,10 @@
         AIzaSyCJfIQuB0MaKH3J2HU7-yVqLIgT0vrK_x4
     </string>
 
+    <!--Photo Activity-->
+    <string name="photo_title">Photo/Video</string>
+    <string name="save_photo_gallery">Save to Gallery</string>
+
     <!-- Feedback Activity -->
     <string name="user_comment">Comment</string>
     <string name="user_rating">Rating</string>

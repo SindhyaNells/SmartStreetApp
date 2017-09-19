@@ -9,4 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.sjsu.assignment.smartstreet.PhotoActivity">
 
+
+    <ImageView
+        android:id="@+id/img_view_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_save_photo"/>
+
+    <Button
+        android:id="@+id/btn_save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save_photo_gallery"/>
+
 </RelativeLayout>
