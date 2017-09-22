@@ -2,6 +2,7 @@
     <string name="app_name">SmartStreet</string>
 
     <!-- MainActivity -->
+    <string name="main_activity_title">Smart Street</string>
     <string name="scan_qrcode_msg">Plase scan the QR code to get the details of the tree</string>
     <string name="qrcode_error_msg">"Error reading barcode: %1$s"</string>
 
@@ -23,6 +24,15 @@
     <!--Photo Activity-->
     <string name="photo_title">Photo/Video</string>
     <string name="save_photo_gallery">Save to Gallery</string>
+    <string name="save_photo_title">Save Photo</string>
+    <string name="save_photo_success_msg">Photo saved to gallery!</string>
+    <string name="save_photo_failure_msg">Error. Please Try again.</string>
+
+    <!--Share Activity-->
+    <string name="share_pic_title">Smart Street Photos</string>
+
+    <!--Photo Detail Activity-->
+    <string name="share_title">Share Photo</string>
 
     <!-- Feedback Activity -->
     <string name="user_comment">Comment</string>

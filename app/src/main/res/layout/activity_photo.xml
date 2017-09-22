@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
         android:text="@string/save_photo_gallery"/>
 
 </RelativeLayout>
