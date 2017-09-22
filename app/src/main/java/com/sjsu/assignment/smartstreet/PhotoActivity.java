@@ -1,6 +1,7 @@
 package com.sjsu.assignment.smartstreet;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -9,6 +10,7 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -76,6 +78,7 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
                     && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
                 //btnSavePhoto.setEnabled(true);
+                //btnSavePhoto.setVisibility(View.VISIBLE);
             }
         }
     }
@@ -124,6 +127,19 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
         Uri contentUri = Uri.fromFile(f);
         mediaScanIntent.setData(contentUri);
         this.sendBroadcast(mediaScanIntent);
+        showdialog();
+
+    }
+    private void showdialog(){
+        new AlertDialog.Builder(PhotoActivity.this).setTitle(R.string.save_photo_title)
+                .setMessage(getResources().getString(R.string.save_photo_success_msg))
+                .setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                })
+                .show();
 
     }
 
@@ -132,6 +148,7 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
         if (requestCode == PHOTO_REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
                 imageView.setImageURI(file);
+                btnSavePhoto.setVisibility(View.VISIBLE);
             }
         }
     }

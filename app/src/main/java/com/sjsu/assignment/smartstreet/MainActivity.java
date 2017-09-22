@@ -1,6 +1,7 @@
 package com.sjsu.assignment.smartstreet;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ActionBar actionBar=getSupportActionBar();
+        if(actionBar!=null) {
+            actionBar.setTitle(getResources().getString(R.string.main_activity_title));
+            actionBar.setDisplayUseLogoEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
+
         populateMenuList();
 
         menuAdapter = new ArrayAdapter<String>(this,R.layout.menu_list_item,R.id.text_menu_title,menuList);
@@ -40,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         Intent photo_intent=new Intent(MainActivity.this,PhotoActivity.class);
                         startActivity(photo_intent);
+                        break;
+                    case 3:
+                        Intent share_intent = new Intent(MainActivity.this,ShareActivity.class);
+                        startActivity(share_intent);
                         break;
                     case 4:
                         Intent map_intent=new Intent(MainActivity.this,MapsActivity.class);
