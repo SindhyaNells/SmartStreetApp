@@ -15,10 +15,13 @@
     <string name="city">City</string>
     <string name="zip_code">Zip Code</string>
     <string name="btn_register">Register</string>
+    <string name="register_success_msg">Your are successfully registered!</string>
+    <string name="register_failure_msg">Error. Please Try again.</string>
 
     <!--Login Activity-->
     <string name="btn_login">Login</string>
     <string name="forgot_pwd">Forgot Password</string>
+    <string name="login_failure_msg">Login Failed. Please Try again.</string>
 
     <!-- MainActivity -->
     <string name="main_activity_title">Smart Street</string>

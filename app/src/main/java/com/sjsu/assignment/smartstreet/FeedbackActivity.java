@@ -94,13 +94,13 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
 
                 try {
 
-                    JSONObject donationObj = new JSONObject();
-                    donationObj.put("comments", getDataFromEditText(editTextcomment));
-                    donationObj.put("rating",getRating(rating));
+                    JSONObject feedbackObj = new JSONObject();
+                    feedbackObj.put("comments", getDataFromEditText(editTextcomment));
+                    feedbackObj.put("rating",getRating(rating));
 
 
                     OutputStreamWriter os = new OutputStreamWriter(urlConnection.getOutputStream());
-                    os.write(donationObj.toString());
+                    os.write(feedbackObj.toString());
                     os.close();
 
                     int HttpResult =urlConnection.getResponseCode();

@@ -44,7 +44,7 @@
             android:theme="@style/NoActionBarTheme"/>
         <activity android:name=".LoginActivity"
             android:theme="@style/NoActionBarTheme"/>
-
+        <activity android:name=".MainActivity"/>
         <activity android:name=".AboutActivity" />
         <activity android:name=".MapsActivity" />
         <activity
