@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">SmartStreet</string>
 
+    <!--Home Activity-->
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="app_title">Smart Street</string>
+
+    <!--Register Activity-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="btn_register">Register</string>
+
+    <!--Login Activity-->
+    <string name="btn_login">Login</string>
+    <string name="forgot_pwd">Forgot Password</string>
+
     <!-- MainActivity -->
     <string name="main_activity_title">Smart Street</string>
     <string name="scan_qrcode_msg">Plase scan the QR code to get the details of the tree</string>
@@ -18,7 +37,7 @@
     <string name="location_dialog_ok">OK</string>
     <string name="location_dialog_cancel">Cancel</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyCJfIQuB0MaKH3J2HU7-yVqLIgT0vrK_x4
+        AIzaSyAc2g4auUwSBVWvg_oodsmek1YvEdrnFM8
     </string>
 
     <!--Photo Activity-->

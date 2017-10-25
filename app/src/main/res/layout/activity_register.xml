@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.sjsu.assignment.smartstreet.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/dialog_margin"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reg_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_main_title" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip">
+
+
+                    <EditText
+                        android:id="@+id/reg_email_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:padding="@dimen/et_padding"
+                        android:hint="@string/email"
+                        android:background="@drawable/etbg_white"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textEmailAddress"
+                        android:gravity="bottom"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content" />
+
+                    <EditText
+                        android:id="@+id/reg_pwd_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/et_padding"
+                        android:hint="@string/password"
+                        android:background="@drawable/etbg_white"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textPassword"
+                        android:gravity="bottom"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content"/>
+
+                    <EditText
+                        android:id="@+id/reg_confirm_pwd_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/et_padding"
+                        android:hint="@string/confirm_password"
+                        android:background="@drawable/etbg_white"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textPassword"
+                        android:gravity="bottom"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content"/>
+
+                    <EditText
+                        android:id="@+id/reg_phone_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:padding="@dimen/et_padding"
+                        android:gravity="bottom"
+                        android:inputType="phone"
+                        android:maxLength="100"
+                        android:hint="@string/phone"
+                        android:background="@drawable/etbg_white"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content" />
+
+                    <EditText
+                        android:id="@+id/reg_addr_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:padding="@dimen/et_padding"
+                        android:gravity="bottom"
+                        android:inputType="textPostalAddress"
+                        android:maxLength="100"
+                        android:hint="@string/address"
+                        android:background="@drawable/etbg_white"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content" />
+
+                    <EditText
+                        android:id="@+id/reg_city_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:padding="@dimen/et_padding"
+                        android:gravity="bottom"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:hint="@string/city"
+                        android:background="@drawable/etbg_white"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content" />
+
+
+                    <EditText
+                        android:id="@+id/reg_company_zipcode_edit_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+                        android:padding="@dimen/et_padding"
+                        android:gravity="bottom"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:hint="@string/zip_code"
+                        android:background="@drawable/etbg_white"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/tv_body_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/dialog_margin"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/register_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_button"
+                        android:text="@string/btn_register"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/button_text"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
