@@ -54,10 +54,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(share_intent);
                         break;
                     case 4:
+                        Intent record_intent = new Intent(MainActivity.this,RecordActivity.class);
+                        startActivity(record_intent);
+                        break;
+                    case 5:
                         Intent map_intent=new Intent(MainActivity.this,MapsActivity.class);
                         startActivity(map_intent);
                         break;
-                    case 5:
+                    case 6:
                         Intent feedback_intent=new Intent(MainActivity.this,FeedbackActivity.class);
                         startActivity(feedback_intent);
                         break;
@@ -76,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         menuList.add("Interact");
         menuList.add("Photo/Video");
         menuList.add("Share");
+        menuList.add("Record");
         menuList.add("Nearby");
         menuList.add("Comments");
 

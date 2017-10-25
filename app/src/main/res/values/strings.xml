@@ -50,6 +50,9 @@
     <string name="save_photo_success_msg">Photo saved to gallery!</string>
     <string name="save_photo_failure_msg">Error. Please Try again.</string>
 
+    <!--Record Screen-->
+    <string name="record_activity_title">Record Music</string>
+
     <!--Share Activity-->
     <string name="share_pic_title">Smart Street Photos</string>
 
